@@ -1,0 +1,65 @@
+Requirments :
+
+flask
+pandas
+numpy
+matplotlib
+sklearn
+
+
+Tutorials:
+
+flask app Tutorial
+
+To Run the App:
+main.py
+
+Go to view the App:
+
+http://127.0.0.1:5000/
+
+
+Examples :
+
+approved credit
+
+input= dict(
+            Gender=1,
+            Married=1,
+            Dependents=1,
+            Education=0,
+            Self_Employed=0,
+            Credit_History=1,
+            Property_Area=2,
+            Group_Age=2,
+            Z_Total_Income=1000,
+            Z_LoanAmount=100,
+            Z_Loan_Amount_Term=120
+analzysing credit
+
+input= dict(
+            Gender=1,
+            Married=1,
+            Dependents=1,
+            Education=1,
+            Self_Employed=1,
+            Credit_History=1,
+            Property_Area=2,
+            Group_Age=0,
+            Z_Total_Income=1000,
+            Z_LoanAmount=100,
+            Z_Loan_Amount_Term=120
+
+not approved 
+creditinput= dict(
+            Gender=1,
+            Married=0,
+            Dependents=3,
+            Education=1,
+            Self_Employed=1,
+            Credit_History=0,
+            Property_Area=0,
+            Group_Age=4,
+            Z_Total_Income=10,#100000
+            Z_LoanAmount=100000,#100
+            Z_Loan_Amount_Term=360

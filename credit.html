@@ -1,0 +1,177 @@
+{% extends "base.html" %}{% block title %}Your Credit{% endblock %}{% block 
+content %}
+
+<style>
+     body {
+      background: rgba(192, 248, 255, 0.315);
+  }
+</style> 
+<form method="POST">
+  <h3 align="center">Ask for your Loan</h3>
+  <div class="form-group">
+    <label for="first_name">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="first_name"
+      name="first_name"
+      placeholder="Enter First Name" required
+    />
+  </div>
+  <div class="form-group">
+    <label for="surname">Surname</label>
+    <input
+      type="text"
+      class="form-control"
+      id="surname"
+      name="surname"
+      placeholder="Enter Surname" required
+    />
+  </div>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="text"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Enter Email Address"required
+    />
+  </div>  
+  <div class="form-group">
+    <label for="gender"> Gender </label>
+    <input
+      type=number
+      class="form-control"
+      id="gender"
+      name="gender"
+      min="0"
+      max="1"
+
+      placeholder="Enter 0 for woman or 1 for man"required
+    />
+  </div>  
+  <div class="form-group">
+    <label for="married"> Married </label>
+    <input
+      type=number
+      class="form-control"
+      id="married"
+      name="married"
+      min="0"
+      max="1"
+      placeholder="Enter 1 for married or 0 for single"required
+  />
+</div>  
+<div class="form-group">
+  <label for="dependents"> Dependents </label>
+  <input
+    type=number
+    class="form-control"
+    id="dependents"
+    name="dependents"
+    min="0"
+    max="3"
+    placeholder="If you have more than 3 dependents, enter 3"required
+/>
+</div>
+  <div class="form-group">
+    <label for="education"> Education </label>
+    <input
+      type=number
+      class="form-control"
+      id="education"
+      name="education"
+      min="0"
+      max="1"
+      placeholder="Enter 0 if you are graduated or 1 if you are not graduated"required
+  />
+</div>
+  <div class="form-group">
+    <label for="self_employed"> Self Employed </label>
+    <input
+      type=number
+      class="form-control"
+      id="self_employed"
+      name="self_employed"
+      min="0"
+      max="1"
+      placeholder="Enter 0 if you are not self employed or 1 if you are "required
+/>
+</div>
+<div class="form-group">
+  <label for="credit_history"> Credit History </label>
+  <input
+    type=number
+    class="form-control"
+    id="credit_history"
+    name="credit_history"
+    min="0"
+    max="1"
+    placeholder="Enter 0 if you have Credit_History or 1 if you have not"required
+/>
+</div>
+<div class="form-group">
+  <label for="property_area">Property Area </label>
+  <input
+    type=number
+    class="form-control"
+    id="property_area"
+    name="property_area"
+    min="0"
+    max="2"
+    placeholder="Enter 0 Rural,1 Semirural,2 Urban"required
+/>
+</div>
+<div class="form-group">
+  <label for="group_age">Age </label>
+  <input
+    type=number
+    class="form-control"
+    id="group_age"
+    name="group_age"
+    min="0"
+    max="4"
+    placeholder="Enter 0 if you 18-29,1: 30-39,2: 40-49,3: 50-59,4:60-69,5:+70"required
+/>
+</div>
+<div class="form-group">
+  <label for="total_income">Total Income </label>
+  <input
+    type=number
+    class="form-control"
+    id="total_income"
+    name="total_income"
+    min="0"
+    max="100000000"
+    placeholder="Enter your income"required
+/>
+</div>
+<div class="form-group">
+  <label for="loan_amount">Loan Amount </label>
+  <input
+    type=number
+    class="form-control"
+    id="loan_amount"
+    name="loan_amount"
+    min="100"
+    max="100000000"
+    placeholder="Enter the amount that you need"required
+/>
+</div>
+<div class="form-group">
+  <label for="loan_amount_term">Loan Amount Term </label>
+  <input
+    type=number
+    class="form-control"
+    id="loan_amount_term"
+    name="loan_amount_term"
+    min="12"
+    max="480"
+    placeholder="Enter the term beteween 12 and 480 months"required
+/>
+</div>
+  <br />
+  <button type="submit" class="btn btn-primary">Analyse</button>
+</form>
+{% endblock %}

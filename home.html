@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}Loan{% endblock %} {% block content
+%}
+
+<h1 style="font-family:courier new" align="center">
+    <p><b><i>Do you need money?</b></i></p>
+</h1>
+<h2 style="font-family:courier new" align="center">
+    <p><b>Here do you find the solution </b></p>
+
+    <img src="static/money.jpg" width="500" align="center">
+
+    <h2>
+        <a class="btn btn-primary" style="float:right" href="/credit">I need Money</a>
+        <ui:include src="credit.html" />
+    </h2>
+
+
+
+</h2>
+
+
+<style>
+    body {
+        background: rgba(192, 255, 255, 0.616);
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+</style>
+
+
+</div>
+
+
+
+{% endblock %}
